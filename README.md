@@ -97,8 +97,7 @@ Here's a [link to my video result](./tracked_video.mp4)
 
 ####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-This project was a struggle. Though lots of the code was made available by Udacity, the process of working through all the different variables was extremely time-consuming and kind of annoying. At least the the failed results came quicker than the previous assignment :) The live training was a big help, though it was hard after the fact to find values or my own methods that could really improve on those results. 
-This project was a struggle. Though lots of the code for this lesson was available to us, the process of working through all the different variables was very time-consuming. At least the the failed results came quicker than the previous assignment :) The live training was a big help, though it was hard after the fact to find values or my own methods that could really improve on those results. 
+This project was a struggle. Though lots of the code was made available by Udacity, the process of working through all the different variables was very time-consuming. The live training was a big help, though it was hard after the fact to find values or my own methods that could really improve on those results. 
 The pipeline could likely fail on extremely hard curves or in bright white or dark situations, or with a different color arrangement of asphalt and lane lines and has no concept of lane lines before or after to help compensate for brief or strange occurences in the visible lane lines. A revision of this project would work to take these factors into account through more robust color filtering and smoothing functions. 
 
 
