@@ -89,7 +89,7 @@ From lines 136-148, we use an additional set of lane lines to act as a mask for 
 
 The video is created using the video_gen.py script, which is nearly identical to the pipeline detailed throughout this document. The essential difference is rather than exporting a series of images, it filters the video frame by frame and exports the result.
 
-Here's a [link to my video result](./tracked_video.mp4)
+Here's a [link to my video result](./output_tracked.mp4)
 
 ---
 
