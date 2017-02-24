@@ -28,6 +28,7 @@ The goals / steps of this project are the following:
 [image7]: ./im_content/window_pixels_0.jpg "Windowed"
 [image8]: ./im_content/fill_road_0.jpg "Fit lines"
 [image6]: ./im_content/lines_road_0.jpg "Output"
+[image9]: ./im_content/center_display_2.jpg "Final Output"
 [video1]: ./output_tracked.mp4 "Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
@@ -82,6 +83,7 @@ We calculate the offset at line 156, averaging the two points closest to the car
 From lines 136-148, we use an additional set of lane lines to act as a mask for greater color depth of our lane markings and a center mask to create the colored patch between lane lines. From our Minv matrix, we use inverse perspective transform to return the new lane lines back to its original perspective, We use OpenCV.addweighted() to combine the original and masked lane line images.
 
 ![alt text][image6]
+![alt text][image9]
 
 ---
 
@@ -100,5 +102,7 @@ Here's a [link to my video result](./tracked_video.mp4)
 ####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 This project was a struggle. Though lots of the code was made available by Udacity, the process of working through all the different variables was extremely time-consuming and kind of annoying. At least the the failed results came quicker than the previous assignment :) The live training was a big help, though it was hard after the fact to find values or my own methods that could really improve on those results. 
-The pipeline could likely fail on extremely hard curves or in bright white or dark situations. 
+This project was a struggle. Though lots of the code for this lesson was available to us, the process of working through all the different variables was very time-consuming. At least the the failed results came quicker than the previous assignment :) The live training was a big help, though it was hard after the fact to find values or my own methods that could really improve on those results. 
+The pipeline could likely fail on extremely hard curves or in bright white or dark situations, or with a different color arrangement of asphalt and lane lines and has no concept of lane lines before or after to help compensate for brief or strange occurences in the visible lane lines. A revision of this project would work to take these factors into account through more robust color filtering and smoothing functions. 
+
 
